@@ -26,11 +26,11 @@ In my DC1602 at least, the 40 bit rows consist of a 28 bit fixed part (bit 0..27
 The commands 
 Command  | Coding
 -------- | -------------
-Open | 3 rows of EE 
-+ | 5 rows of E1
-Stop | 3 rows of AA
-Close | 3 rows of CC
-+ | 5 rows of C3
+Open | EE 
+ | E1
+Stop | AA
+Close | CC
+ | C3
 
 The channels are numbered oddly, F is channel 0, E is channel 1, etc.
 
