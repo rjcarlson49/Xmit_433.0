@@ -14,7 +14,6 @@ plugin for control of shades.
 
 ## Hardware
 The main hardware is an [Arduino Uno rev3](https://store.arduino.cc/usa/arduino-uno-rev3). Attached to that you need a 433 MHz transmitter. 433 MHz transmitters and receivers are sold in pairs. I bought this pair, [RioRand](https://amazon.com/gp/product/B00HEDRHG6/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1), from Amazon. The transmitter is tiny and has 4 pins. Two are ground and VCC. These connect to the GND and 5V pins on the Arduino. The data pin connects to the pin 12 on the Arduino. The AN pin, antenna I just connected a loose pieve of wire to.
-pair
 
 ## Encoding
 
