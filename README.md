@@ -27,10 +27,10 @@ The commands
 Command  | Coding
 -------- | -------------
 Open | EE 
- | E1
+. | E1
 Stop | AA
 Close | CC
- | C3
+. | C3
 
 The channels are numbered oddly, F is channel 0, E is channel 1, etc.
 
