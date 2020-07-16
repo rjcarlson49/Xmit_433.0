@@ -1,4 +1,4 @@
-#include config.h
+#include "config.h"
   
 /*
  * Cmd ::= + ('?' | Config | Msg | Delay) 
@@ -24,21 +24,21 @@ parseCmd()
     
     while (parseIncomplete()) {
         if (parseConfig()) {
-            //Serial.println("parseConfig done" + parseString());
+            Serial.println("parseConfig done " + parseString());
             ok = true;
         
         } else if (currentIs('?')) {
             showHelp();
 
         } else if (parseMsg()) {
-            //Serial.println("parseMsg done" + parseString());
+            Serial.println("parseMsg done " + parseString());
             
         } else if (parseDelay()) {
-            //Serial.println("parseDelay done" + parseString());
+            Serial.println("parseDelay done" + parseString());
           
         } else {
-            //Serial.println(parseString() + "end parse");
-            return false;
+            endParse();
+            Serial.println(parseString() + "end parse");
         }
     }
     Serial.println("!!READY!!");

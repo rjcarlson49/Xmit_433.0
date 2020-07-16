@@ -1,4 +1,4 @@
-#include config.h
+#include "config.h"
   
 int dataPin = 12;
 int high = HIGH;

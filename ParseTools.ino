@@ -1,4 +1,4 @@
-#include config.h
+#include "config.h"
   
 String cmd;
 
@@ -6,6 +6,12 @@ String cmd;
 parseString()
 {
     return cmd;
+}
+
+    void
+endParse()
+{
+  cmd = "";
 }
 
     void
