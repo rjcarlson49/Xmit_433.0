@@ -3,7 +3,7 @@
 
 This Arduino sketch imitates an RF remote that uses OOK (On Off Keying). Specifically it was meant to clone a Dooya DC1602 remote for shades. It is meant to be linked to this Homebridge plugin for control of shades.
 
-### [Homebridge Dooya Plugin](https://github.com/rjcarslon49/homebridge-dooya-0)
+### [Homebridge Dooya Plugin](https://github.com/rjcarlson49/homebridge-dooya-0)
 
 ## Hardware
 The main hardware is an [Arduino Uno rev3](https://store.arduino.cc/usa/arduino-uno-rev3). Attached to that you need a 433 MHz transmitter. 433 MHz transmitters and receivers are sold in pairs. I bought this pair, [RioRand](https://amazon.com/gp/product/B00HEDRHG6/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1), from Amazon and discarded the receiver. The transmitter is tiny and has 4 pins. Two are ground and VCC. These connect to the GND and 5V pins on the Arduino. The data pin connects to the pin 12 on the Arduino. The AN pin, antenna I just connected a loose piece of wire to.
@@ -22,10 +22,10 @@ The commands
 Command  | Coding | Transmissions
 -------- |:---------:|:------:
 Open | EE | 3
-. | E1 | 6
+. | E1 | 5
 Stop | AA | 3
 Close | CC | 3
-. | C3 | 6
+. | C3 | 5
 
 The channels are numbered oddly, F is channel 0, E is channel 1, etc.
 
