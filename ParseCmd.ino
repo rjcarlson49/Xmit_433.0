@@ -47,6 +47,8 @@ parseCmd()
     void 
 showHelp()
 {
+    Serial.println("");
+    Serial.println(NAME);
     Serial.println("----------------------------------------");
     Serial.println("Cmd    ::= + (Help | Config | Msg | Delay)");
     Serial.println("Help   ::= '?'                          // Help");

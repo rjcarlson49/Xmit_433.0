@@ -4,10 +4,13 @@
 setup()
 {
     Serial.begin(115200);
+    delay(5000);
     while (!Serial) {
         ; // wait for serial port to connect. Needed for native USB port only
     }
-    Serial.println("setup");
+    Serial.println(" ");
+    Serial.println(NAME);
+    Serial.println(" ");
     setupXmitDefaults();
     showConfig();
 }
